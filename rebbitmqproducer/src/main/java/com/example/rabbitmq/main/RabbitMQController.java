@@ -17,6 +17,11 @@ public class RabbitMQController {
     private RabbitListenerEndpointRegistry rabbitListenerEndpointRegistry;
 
     @RequestMapping("stop")
+
+
+
+
+
     public String stop(){
         rabbitListenerEndpointRegistry.stop();
         MsgProducer.setIsRun(new Boolean("false"));
